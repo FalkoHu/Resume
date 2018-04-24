@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <TITLE>Resume Creator</TITLE>
+        
+    
+    </HEAD>
+    <BODY>
+        <H1><CENTER>Create Your Resume</CENTER></H1>
+
+        <H3><CENTER>Students of Illinois State University</CENTER></H4>
+
+    </CENTER></H4>
+<tr>
+    <td colspan="2"><a href="index.jsp">Log In</a></td>
+</tr>
+
+<form method=post
+      action=resumecreator.jsp>
+
+    <P>
+        Please provide information for the heading:
+        <br> <br> 
+        First Name: <INPUT TYPE="text" NAME="FIRSTNAME" SIZE=40 MAXLENGTH=80>
+        <br>
+        Last Name: <INPUT TYPE="text" NAME="LASTNAME" SIZE=40 MAXLENGTH=80>
+        <br>
+        Street Address: <INPUT TYPE="text" NAME="ADDRESS" SIZE=40 MAXLENGTH=80>
+        <br>
+        City Address: <INPUT TYPE="text" NAME="CITY" SIZE=40 MAXLENGTH=80>
+        <br>
+        Zip Code: <INPUT TYPE="text" NAME="ZIP" SIZE=40 MAXLENGTH=80>
+        <br>
+        E-mail address: <INPUT TYPE="text" NAME="EMAIL" SIZE=40 MAXLENGTH=80>
+        <br>
+        Phone Number: <INPUT TYPE="text" NAME="PHONE" SIZE=40 MAXLENGTH=80>
+    <HR>
+
+
+    <P>
+    <FORM >
+
+        <H3>Please provide your education information: </H3>
+
+        <P>
+            University Name: <INPUT TYPE="RADIO" NAME="SCHOOLNAME" VALUE="Illinois State University">Illinois State University
+        <P>
+
+        <P>
+            University Location: <INPUT TYPE="RADIO" NAME="SCHOOLLOC" VALUE="Bloomington-Normal">Bloomington-Normal
+        <P>
+
+        <P>
+            Degree: <INPUT TYPE="RADIO" NAME="DEGREE" VALUE="Degree of Science">Degree of Science 
+            <INPUT TYPE="RADIO" NAME="DEGREE" VALUE="Degree of Business">Degree of Business 
+        <P>
+
+        <P>
+            Major: <INPUT TYPE="RADIO" id="majorIS" NAME="MAJOR" VALUE="Information Systems">Information Systems
+            <INPUT TYPE="RADIO" ID="majorBIS" NAME="MAJOR" VALUE="Business Information Systems">Business Information Systems 
+        <P>
+
+        <P>
+            Grade Level: <INPUT TYPE="RADIO" NAME="YEAR" VALUE="Freshman">Freshman 
+            <INPUT TYPE="RADIO" NAME="YEAR" VALUE="Sophomore">Sophomore
+            <INPUT TYPE="RADIO" NAME="YEAR" VALUE="Junior">Junior
+            <INPUT TYPE="RADIO" NAME="YEAR" VALUE="Senior">Senior
+
+        <P>
+            Anticipated Graduation Date: Semester <SELECT NAME="GRADUATIONDATE" >
+                <OPTION SELECTED VALUE=""> ? 
+                <OPTION VALUE="Fall">Fall
+                <OPTION VALUE="Spring">Spring
+            </SELECT>     
+            Year <SELECT NAME="GRADUATIONYEAR">
+                <OPTION SELECTED VALUE=""> ??
+                <OPTION>2018
+                <OPTION>2019
+                <OPTION>2020
+                <OPTION>2021
+                <OPTION>2022
+                <OPTION>2023
+                <OPTION>2024
+                <OPTION>2025
+                <OPTION>2026
+                <OPTION>2027
+                <OPTION>2028
+                <OPTION>2029
+                <OPTION>2030
+            </SELECT>     
+
+            <br />
+            <br />
+            Grade Point Average (GPA): <INPUT TYPE="text" NAME="GPA" SIZE=10 MAXLENGTH=10>    
+        <HR>
+
+        <DIV id="coursesIS">
+            <H3>Please select the courses you would like to include:
+            </H3>
+            Courses:
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="168" VALUE="168">IT 168 - Structured Problem Solving using Java
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="261" VALUE="261">IT 261 - Systems Development
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="262" VALUE="262">IT 262 - Project Management
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="COBOL" VALUE="cobol">IT 272/372 - Cobol Development
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="363" VALUE="363">IT 363 - Systems Development
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="378" VALUE="376">IT 378 - External Data Structures (SQL)
+        </div>
+
+        <DIV id="coursesBIS">
+            <H3>Please select the courses you would like to include:
+            </H3>
+            Courses:
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="168" VALUE="168">ACC
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="261" VALUE="261">Acc
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="262" VALUE="262">ACC
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="COBOL" VALUE="cobol">ACC
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="363" VALUE="363">ACC
+            <br>
+            <INPUT TYPE="CHECKBOX" NAME="378" VALUE="376">ACC
+        </DIV>
+
+        <H3>Please select the following technical skills that you would association with yourself:
+        </H3>
+
+        <P>
+
+        <TABLE BORDER>
+
+            <TR ALIGN=CENTER>
+                <TD WIDTH=75> </TD>
+                <TD WIDTH=75><B>No Experience</B></TD>
+                <TD WIDTH=75><B>Little Experience</B></TD>
+                <TD WIDTH=75><B>Well Experienced</B></TD>
+                <TD WIDTH=75><B>Very Strong Experience</B></TD>
+            </TR>
+
+            <TR ALIGN=CENTER>
+                <TD  ALIGN=LEFT>
+                    Java</TD>
+                <TD><INPUT TYPE="RADIO" NAME="javaSkill" VALUE="1"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="javaSkill" VALUE="2"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="javaSkill" VALUE="3"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="javaSkill" VALUE="4"></TD>
+            </TR>
+
+            <TR ALIGN=CENTER>
+                <TD  ALIGN=LEFT>
+                    SQL</TD>
+                <TD><INPUT TYPE="RADIO" NAME="sqlSkill" VALUE="1"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="sqlSkill" VALUE="2"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="sqlSkill" VALUE="3"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="sqlSkill" VALUE="4"></TD>
+            </TR>
+
+            <TR ALIGN=CENTER>
+                <TD  ALIGN=LEFT>
+                    Front-End</TD>
+                <TD><INPUT TYPE="RADIO" NAME="frontEndSkill" VALUE="1"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="frontEndSkill" VALUE="2"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="frontEndSkill" VALUE="3"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="frontEndSkill" VALUE="4"></TD>
+            </TR>
+
+            <TR ALIGN=CENTER>
+                <TD  ALIGN=LEFT>
+                    Cobol</TD>
+                <TD><INPUT TYPE="RADIO" NAME="cobolSkill" VALUE="1"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="cobolSkill" VALUE="2"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="cobolSkill" VALUE="3"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="cobolSkill" VALUE="4"></TD>
+            </TR>
+
+            <TR ALIGN=CENTER>
+                <TD  ALIGN=LEFT>
+                    UML Diagrams</TD>
+                <TD><INPUT TYPE="RADIO" NAME="umlSkill" VALUE="1"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="umlSkill" VALUE="2"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="umlSkill" VALUE="3"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="umlSkill" VALUE="4"></TD>
+            </TR>
+
+            <TR ALIGN=CENTER>
+                <TD  ALIGN=LEFT>
+                    Project Management</TD>
+                <TD><INPUT TYPE="RADIO" NAME="projectManagementSkill" VALUE="1"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="projectManagementSkill" VALUE="2"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="projectManagementSkill" VALUE="3"></TD>
+                <TD><INPUT TYPE="RADIO" NAME="projectManagementSkill" VALUE="4"></TD>
+            </TR>
+
+        </TABLE>
+
+        <HR>
+        <h3>
+            Please provide your Job Experience:
+        </h3>
+
+        <div class="jobss">
+            Job Title: <INPUT TYPE="text" NAME="JOBTITLE" SIZE=40 MAXLENGTH=80>
+            <br>
+            Employer: <INPUT TYPE="text" NAME="EMPLOYER" SIZE=40 MAXLENGTH=80>
+            <br>
+            City: <INPUT TYPE="text" NAME="JOBCITY" SIZE=40 MAXLENGTH=80>
+            <br>
+            State: <INPUT TYPE="text" NAME="JOBSTATE" SIZE=40 MAXLENGTH=80>
+            <br>
+            Start Date: <input id="date" type="date" NAME="STARTDATE">
+            <br>
+            End Date: <input id="date" type="date" NAME="ENDDATE">
+            <br>
+            Description: <TEXTAREA NAME="DESCRIPTION" ROWS="4"  COLS="50">
+</TEXTAREA>
+<BR>
+</div>
+
+<DIV class="addJobs"><BR>
+</DIV>
+
+<input type="button" id="addJob" value="Add Another Job"> <input type="button" id="removeJob" value="Remove Last Job">
+<BR>
+<input type=submit VALUE="Create Resume"> <input type=reset VALUE="Clear values">
+<HR>
+</FORM>
+
+<SCRIPT>
+    $(document).ready(function () {
+        //-----------------------ADD/REMOVE JOBS---------------------------------------        
+        var count = 1;
+        document.getElementById("addJob").onclick = function () {
+            var clone = $(".jobss:first").clone();
+            clone.find(':input').val('');
+            clone.find(":input").attr("name", function (i, val) {
+                return val + count;
+            });
+            var text = $("<h3></h3>");
+            text.html("Please Provide Your Job Experience:");
+            text.appendTo(".addJobs");
+            clone.appendTo(".addJobs");
+            count++;
+        }
+        document.getElementById("removeJob").onclick = function () {
+            $(".jobss:last").remove();
+            $("h3:last").remove();
+        }
+
+        //-----------------------------COURSES---------------------------------       
+
+
+        var isChecked = document.getElementById('majorIS');
+        var bisChecked = document.getElementById('majorBIS');
+
+        isChecked.onclick = showIS;
+        bisChecked.onclick = showBIS;
+
+        function showIS() {
+            $("#coursesIS").show();
+            $("#coursesBIS").hide();
+        }
+
+        function showBIS() {
+            $("#coursesBIS").show();
+            $("#coursesIS").hide();
+        }
+    });
+    </SCRIPT>
+</BODY>
+</HTML>
